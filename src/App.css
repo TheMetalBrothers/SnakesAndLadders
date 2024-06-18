@@ -35,8 +35,17 @@
 
 .card {
   padding: 2em;
+  position: absolute;
+  top: 50px;
+  left: 80%;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+div.signedIn {
+  position: absolute;
+  top: 10px;
+  left: 80%;
 }
