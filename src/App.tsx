@@ -1,14 +1,19 @@
 
-  import { useContext, useEffect } from 'react'
+  import { useContext, useEffect} from 'react'
   import { Routes , Route, useNavigate } from 'react-router-dom' 
   import { AuthContext } from './context/auth-context'
   import RequireAuth from './context/require-auth'
   import Home from './routes/home'
   import Profile from './routes/profile'
+  // import { ConnectionState } from './components/connectionState';
+  // import { ConnectionManager } from './components/connectionManager';
+  // import { Events } from "./components/Events";
+  // import { MyForm } from './components/myForm';
 
   function App() {
     const { currentUser } = useContext(AuthContext)
     const navigate = useNavigate()
+    
 
     // NOTE: console log for testing purposes
     console.log('User:', !!currentUser);
