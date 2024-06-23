@@ -5,11 +5,7 @@
   import RequireAuth from './context/require-auth'
   import Home from './routes/home'
   import Profile from './routes/profile'
-  // import { ConnectionState } from './components/connectionState';
-  // import { ConnectionManager } from './components/connectionManager';
-  // import { Events } from "./components/Events";
-  // import { MyForm } from './components/myForm';
-
+  
   function App() {
     const { currentUser } = useContext(AuthContext)
     const navigate = useNavigate()
